@@ -60,6 +60,7 @@ class LotteryPage:
         c = c.lower()
 
         # update the winner 
-        now = datetime.datetime.now()
-        self.memberModel.update_the_winner(the_winner[2], now)
+        if c == 'y':
+            now = datetime.datetime.now()
+            self.memberModel.update_the_winner(the_winner[2], now)
         
