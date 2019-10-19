@@ -23,7 +23,7 @@ class MemberPage:
     print("\n")
 
     table = PrettyTable()
-    table.field_names = ["No", "MemberID", "Fullname", "Description", "Created at", "Completed at"]
+    table.field_names = ["No", "MemberID", "Fullname", "Description", "Created at", "Won on date"]
 
     datas = MemberModel().data()
     no = 1

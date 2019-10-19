@@ -51,7 +51,7 @@ class DB:
     self.cursor.execute('''
       CREATE TABLE IF NOT EXISTS data_members (
         created_at DATE,
-        completed_at DATE,
+        won_on_date DATE,
         id INTEGER PRIMARY KEY,
         fullname TEXT,
         description TEXT

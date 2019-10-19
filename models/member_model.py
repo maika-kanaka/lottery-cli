@@ -42,6 +42,14 @@ class MemberModel:
 
     return True
 
+  def update_the_winner(self, primary_key, date):
+    sql = "UPDATE "+ self.table +" SET won_on_date = ? WHERE id = ?"
+
+    self.objDB.execute_sql(sql, (date, primary_key))
+    self.objDB.commit()
+
+    return True
+
   def delete(self, primary_key):
     sql = "DELETE FROM "+ self.table +" WHERE id = ?"
     
