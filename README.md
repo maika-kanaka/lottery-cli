@@ -2,11 +2,12 @@
 
 ## What's Lottery CLI ?
 **Lottery CLI** is program for Lottery or social gathering (in Indonesia, we said 'Arisan'). 
+
 ### Features
 1. Records the member data
 2. Determine the winner
 
-## License 
+### License 
 This software is distributed under The MIT License, please read LICENSE 
 for more information: https://en.wikipedia.org/wiki/MIT_License
 
@@ -17,7 +18,7 @@ for more information: https://en.wikipedia.org/wiki/MIT_License
 1. Clone or download this repository
 2. Run a program lottery.exe for Windows & lottery.run for Linux on dist/ directory
 
-# Big thanks to 
+## Big thanks to 
 
 - Allah SWT
 - Our earth
