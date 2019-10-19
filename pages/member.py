@@ -75,6 +75,7 @@ class MemberPage:
     pk = pk.lower()
 
     # valid: ID is exists
+    UI.clear()
     if "m-" in pk:
       pk = pk.replace("m-","")
       if pk.isnumeric():
