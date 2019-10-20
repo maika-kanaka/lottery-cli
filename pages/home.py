@@ -9,6 +9,8 @@ class HomePage:
 
   def menu():
     UI.figlet("LOTTERY")
+    UI.print_color(text="Created with love by: ", color='blue', end='')
+    print('Maika Kanaka')
     UI.print_color(text="Version: ", color='blue', end='')
     print('0.1.0')
 
