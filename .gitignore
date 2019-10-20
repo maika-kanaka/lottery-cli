@@ -3,4 +3,5 @@ dist/
 build/
 tests/
 lottery.db
+lottery.spec
 *Db.*
