@@ -19,7 +19,7 @@ class LotteryPage:
         if c.lower() == 'n':
             Config.route = 'home'
             return False
-        else:
+        elif c.lower() == 'y':
             # get data 
             query = self.memberModel.data()
 
