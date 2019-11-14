@@ -11,12 +11,15 @@
 This software is distributed under The MIT License, please read LICENSE 
 for more information: https://en.wikipedia.org/wiki/MIT_License
 
-## Documentation
-
-### How to use
+### How to compile to .exe or .run
 
 1. Clone or download this repository
-2. Run a program lottery.exe for Windows & lottery.run for Linux on dist/ directory
+2. Install python 3.7
+3. for Windows type py setup.py install
+   for Linux type python3 setup.py install
+4. Check the program is run correcly by **blabla**
+5. Compile with pyinstaller by the following command: **blabla**
+99. Run a program lottery.exe for Windows & lottery.run for Linux on dist/ directory
 
 ## Big thanks to 
 
@@ -32,3 +35,8 @@ for more information: https://en.wikipedia.org/wiki/MIT_License
 - visual studio code https://code.visualstudio.com/
 - Ubuntu 18.04 https://ubuntu.com/
 - and all parties that cannot be mentioned one by one
+
+# TODO 
+ 
+- Export data member to csv 
+
