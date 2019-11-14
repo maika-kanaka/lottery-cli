@@ -15,8 +15,11 @@ class LotteryPage:
 
     def confirm(self):
         c = input("ARE YOU READY (Y/n)> ")
-
-        if c.lower() == 'n':
+        
+        if not c in ["Y", "y", "N", "n"]:
+            self.confirm()
+            return False
+        elif c.lower() == 'n':
             Config.route = 'home'
             return False
         elif c.lower() == 'y':
@@ -28,6 +31,12 @@ class LotteryPage:
                 print("You do not have any members")
                 self.confirm()
                 return False
+            else:
+                query = self.memberModel.dataHaveNotWon()
+                if len(query) < 1:
+                    print("All participants have won")
+                    self.confirm()
+                    return False
 
             # fill to list
             members = []
@@ -63,4 +72,5 @@ class LotteryPage:
         if c == 'y':
             now = datetime.datetime.now()
             self.memberModel.update_the_winner(the_winner[2], now)
-        
+            Config.route = '1'
+            return False

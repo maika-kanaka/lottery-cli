@@ -14,6 +14,9 @@ class MemberModel:
     self.objDB = DB()
     self.table = 'data_members'
 
+  def dataHaveNotWon(self):
+    return self.objDB.execute_sql("SELECT * FROM "+ self.table +" WHERE won_on_date IS NULL ORDER BY fullname").fetchall()
+
   def data(self):
     return self.objDB.execute_sql("SELECT * FROM "+ self.table +" ORDER BY fullname").fetchall()
   
