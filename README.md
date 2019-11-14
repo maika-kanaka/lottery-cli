@@ -39,4 +39,5 @@ for more information: https://en.wikipedia.org/wiki/MIT_License
 # TODO 
  
 - Export data member to csv 
+- Setup.py for packages dependencies
 
