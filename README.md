@@ -1,7 +1,7 @@
 # Lottery CLI 
 
 ## What's Lottery CLI ?
-**Lottery CLI** is program for Lottery or social gathering (in Indonesia, we said 'Arisan'). 
+**Lottery CLI** is program for Lottery or social gathering (in Indonesia, we said 'Arisan'). Download the latest version 0.1.0 https://github.com/maika-kanaka/lottery-cli/releases/download/v.0.1.0/lottery.exe
 
 ### Features
 1. Records the member data
@@ -41,3 +41,4 @@ for more information: https://en.wikipedia.org/wiki/MIT_License
 - Export data member to csv 
 - Setup.py for packages dependencies
 
+pyinstaller --onefile --add-data "C:/Users/<SENSORS>/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pyfiglet";./pyfiglet lottery.py
