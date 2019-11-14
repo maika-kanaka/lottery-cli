@@ -5,3 +5,4 @@ tests/
 lottery.db
 lottery.spec
 *Db.*
+lottery_cli.egg-info/
